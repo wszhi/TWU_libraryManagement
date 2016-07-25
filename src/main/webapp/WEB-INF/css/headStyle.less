@@ -1,0 +1,67 @@
+@colorBule: #0088cc;
+@colorWhite:white;
+@colorBlack:black;
+@boxShadow:0 0 1px 1px rgba(0,0,0,.2);
+@fontFamily:Verdana;
+@maginZero:0;
+@paddingZero:0;
+@borderLightGray:1px solid lightgray;
+@borderLightGray2px:2px solid gray;
+@buttonGray:gray;
+@fontSize:1em;
+body {
+    margin: @maginZero;
+    padding: @paddingZero;
+    font-family: @fontFamily;
+    background-color: @colorWhite;
+    color:@colorBlack;
+    font-size: @fontSize;
+}
+.center{
+    text-align: center;
+}
+.btnPrimary{
+    background-color: @colorBule;
+    color: @colorWhite;
+    border:0;
+    font-size: @fontSize;
+}
+.headContent{
+    width: 100%;
+    height: 100px;
+    padding-top: 1%;
+    box-shadow: @boxShadow;
+    background-color: @colorWhite;
+    .imgLogo{
+        width: 15%;
+        height: 100px;
+        float: left;
+        margin-left: 1%;
+        margin-right: 5%;
+        img{
+            width: 150px;
+            height: 80px;
+            float: left;
+        }
+    }
+}
+.search{
+    width:35%; 
+    height:100px; 
+    display: table-cell; 
+    vertical-align: middle;
+    .formControl{
+        width: 75%;
+        float: left;
+        height: 30px;
+        font-size: @fontSize;
+        border: @borderLightGray2px;
+    }
+    .btnPrimary{
+        float: left;
+        width: 20%;
+        height: 36px;
+        border: @borderLightGray2px;
+        background-color: @buttonGray;
+    }
+}
