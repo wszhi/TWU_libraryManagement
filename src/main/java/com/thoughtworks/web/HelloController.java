@@ -1,6 +1,5 @@
 package com.thoughtworks.web;
 
-import com.thoughtworks.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -11,16 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class HelloController {
 
-    private final HelloService helloService;
-
-    @Autowired
-    public HelloController(HelloService helloService) {
-        this.helloService = helloService;
-    }
-
 	@RequestMapping(method = RequestMethod.GET)
-	public String displayMessage(ModelMap model) {
-        model.addAttribute("message", helloService.getGreeting());
+	public String displayMessage() {
 		return "index";
 	}
 }

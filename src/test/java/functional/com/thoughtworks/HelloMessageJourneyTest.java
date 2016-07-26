@@ -23,7 +23,7 @@ public class HelloMessageJourneyTest {
 
         final String message = this.driver.findElement(By.tagName("h1")).getText();
 
-        assertEquals("Hello TWU!!", message);
+        assertEquals("Book List", message);
     }
 
     @After

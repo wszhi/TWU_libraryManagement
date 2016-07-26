@@ -17,5 +17,9 @@
             <input type="text" placeholder="搜索书籍" class="formControl" id="searchByName" value="">
             <button class="btnPrimary" ng-click="">搜索</button>
         </div>
+
+        <div>
+            <h1><a href="<c:url value="/book/listOfBook"/>">Book List</a></h1>
+        </div>
     </div>
 </div>
