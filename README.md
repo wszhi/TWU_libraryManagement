@@ -1,9 +1,9 @@
 HelloTWU
 ========
 
-App for testing that TWU stack is correctly configured.
+App for library management
 
-You should have:
+Tools:
 * git
  * preinstalled in MacOSX
  * if not there follow instructions: http://git-scm.com/book/en/v2/Getting-Started-Installing-Git
@@ -22,13 +22,13 @@ You should do:
 * To setup your environment(create DB and users allowed to access the DB). Execute in the terminal:
   ```./gradlew clean build```
 
-This should set up your machine to run the HelloTWU webapp and its tests properly.
+This should set up your machine to run the library management webapp and its tests properly.
 
-To start the HelloTWU webapp, open up a terminal window and navigate into the hellotwu directory.
+To start the Library Management webapp, open up a terminal window and navigate into the TWU_libraryManagement directory.
 
 Run ```./gradlew jettyRun```
 
-Navigate to http://localhost:8080 in a browser. You should see a hello message.
+Navigate to http://localhost:8080 in a browser. You should see the welcome page.
 Once you see the message, go to the terminal and press Control + C to stop the Jetty process.
 
 Run ```./gradlew functionalTest```
